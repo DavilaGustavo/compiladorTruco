@@ -63,7 +63,7 @@ Este compilador apresenta uma série de comandos e funções para facilitar o ap
 
 - var1 **==** var2                        **(Igualdade)**
 
-- **!**var1                               **(Negação)**
+- !var1                               **(Negação)**
 
 ## Análise Léxica
 Durante esta fase, o código é lido e traduzido para facilitar seu manuseio. Cada token é analisado e separado em: tipo, valor, linha e coluna.
