@@ -1,3 +1,4 @@
+![logoTrucoPP](https://github.com/DavilaGustavo/compiladorTruco/assets/106328212/19bebfa9-11e3-4515-b08c-8f71c41807de)
 # Truco++
 **Truco++** é um compilador inspirado no famoso jogo brasileiro truco, oferecendo uma abordagem simplificada e intuitiva para aprender a programar em outras linguagens. Nosso objetivo é proporcionar um ambiente divertido e estimulante para aqueles que desejam se aventurar na programação usando este projeto.
 
