@@ -1,0 +1,14 @@
+truco++
+
+if = truco 
+else if = meio-pau
+else = cai
+for = partida
+while = rodada
+int = tento
+float = casal
+char = mao
+string = pe
+bool = blefe 
+return = reembaralha
+void = pato

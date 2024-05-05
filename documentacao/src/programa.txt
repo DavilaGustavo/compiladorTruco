@@ -1,0 +1,30 @@
+tento teste(){
+	tento hmm = 0;
+	hmm = 1 + 1;
+	reembaralha 1;
+};
+
+tento testeNegativo(){
+	reembaralha 0;
+};
+
+pato temporario(){};
+
+tento main(){
+	tento b = 2;
+	casal c = 2.1;
+	mao l = 'k';
+	blefe boo = 1;
+	pe st = "popo";
+
+	partida(tento i = 0; i <= 10; i++){	
+		truco(i > 0){
+			b = i;
+		};
+		cai{
+			i = b;
+		};
+	};
+
+	reembaralha 0;
+};

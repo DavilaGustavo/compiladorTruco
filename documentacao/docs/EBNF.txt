@@ -1,0 +1,21 @@
+<programa>                ::= <declaracao>* <funcao_principal>
+<declaracao>              ::= <declaracao_variavel> | <declaracao_funcao>
+<declaracao_variavel>     ::= <tipo> IDENTIFIER ';'
+<declaracao_funcao>       ::= <tipo> IDENTIFIER '(' <lista_parametros>? ')' <bloco>
+<tipo>                    ::= "int" | "char" | "float" | "string" | "bool" | "void"
+<lista_parametros>        ::= <declaracao_variavel> (',' <declaracao_variavel>)*
+<bloco>                   ::= '{' <comando>* '}'
+<funcao_principal>        ::= "int" "main" '(' ')' <bloco>
+<comando>                 ::= <comando_condicional> | <comando_laco> | <comando_retorno> | <declaracao_variavel> | <atribuicao> | <declaracao> ';'
+<comando_condicional>     ::= "if" '(' <expressao> ')' <bloco> ( "else if" '(' <expressao> ')' <bloco> )* ( "else" <bloco> )?
+<comando_laco>            ::= "for" '(' <atribuicao> ';' <expressao> ';' <atribuicao> ')' <bloco> | "while" '(' <expressao> ')' <bloco>
+<comando_retorno>         ::= "return" <expressao> ';'
+<expressao>               ::= <expressao_condicional>
+<expressao_condicional>   ::= <expressao_or> ( "&&" <expressao_or> )*
+<expressao_or>            ::= <expressao_and> ( "||" <expressao_and> )*
+<expressao_and>           ::= <expressao_relacional> ( "==" <expressao_relacional> | "!=" <expressao_relacional> )*
+<expressao_relacional>    ::= <expressao_aditiva> ( "<" <expressao_aditiva> | ">" <expressao_aditiva> | "<=" <expressao_aditiva> | ">=" <expressao_aditiva> )*
+<expressao_aditiva>       ::= <expressao_multiplicativa> ( "+" <expressao_multiplicativa> | "-" <expressao_multiplicativa> )*
+<expressao_multiplicativa>::= <expressao_unaria> ( "*" <expressao_unaria> | "/" <expressao_unaria> )*
+<expressao_unaria>        ::= "!" <expressao_unaria> | "-" <expressao_unaria> | <valor> | '(' <expressao> ')'
+<valor>                   ::= IDENTIFIER | INTEGER | CHARLETTER | FLOATNUMBER | STRINGWORD | BOOL

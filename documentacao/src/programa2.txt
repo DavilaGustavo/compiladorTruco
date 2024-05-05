@@ -1,0 +1,22 @@
+
+pato declaraInutil(){
+	tento c = 0;
+};
+
+tento retornaSoma(tento i, tento ii){
+	tento temp = 0;
+	temp = i + ii;
+	reembaralha temp;
+};
+
+tento main(){
+	tento g = 50;	
+	@@ não foi possível implementar a chamada de funções @@
+	truco(g > 0){
+		g = 100;
+	};
+	cai{
+	};
+		
+	reembaralha 0;
+};
