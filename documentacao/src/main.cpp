@@ -25,9 +25,7 @@ vector<Sintatica::Token> tokensSint;
 
     Sintatica::Token token;
     token.setTokens(tokensSint);
-
-    //printTokens(tokensSint);
-
+    
     if (token.parseProgram()) {
         cout << "(Sintatica) Codigo valido!" << endl;
     } else {
